@@ -1,0 +1,3 @@
+# puppet_sample_modules #
+
+This is the puppet_sample_modules module. It provides...
