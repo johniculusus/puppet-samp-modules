@@ -16,21 +16,12 @@ class openssh::server {
 
   file { '/etc/ssh/sshd_config' :
     ensure  => present,
-#    content => template('openssh/sshd_config.erb'),
     owner   => 'root',
     group   => 'root',
     mode    => '0640',
     notify  => Service['ssh'],
     require => Package['openssh-server'],
   }
-
-#  file { '/etc/issue.net' :
-#    ensure  => present,
-#    content => template('openssh/issue.net.erb'),
-#    owner   => 'root',
-#    group   => 'root',
-#    mode    => '0644',
-#  }
 
   service { 'ssh' :
     ensure     => running,

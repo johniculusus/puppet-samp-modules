@@ -1,8 +1,4 @@
 class filetransferbucket::server {
-  package { 'openssh-server' :
-    ensure => latest
-  }
-
   file { '/tmp/testmaster.txt':
     ensure => present,
     owner => root,

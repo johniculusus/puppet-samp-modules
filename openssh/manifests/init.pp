@@ -1,6 +1,6 @@
-# Class: puppet_sample_modules
+# Class: openssh
 #
-# This module manages puppet_sample_modules
+# This module manages openssh
 #
 # Parameters: none
 #
@@ -10,6 +10,6 @@
 #
 # Sample Usage:
 #
-class puppet_sample_modules {
+class openssh {
 
 }
