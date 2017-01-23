@@ -2,3 +2,5 @@
 .idea/
 environment.conf
 hieradata/
+git/
+stdlib/
